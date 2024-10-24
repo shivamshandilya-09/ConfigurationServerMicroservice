@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    prefer-ip-address: true    #check property usage (hover over property)
+  client:
+    register-with-eureka: true    #register USER-SERVICE microservice on Eureka Server (ServiceRegistry Microservice)
+    fetch-registry: true          #USER-SERVICE microservice can fetch registry information from Eureka Server (ServiceRegistry Microservice)
+    service-url:
+      defaultZone: http://localhost:8080/eureka  #Eureka Server URL
